@@ -27,7 +27,7 @@ A robust RESTful API for tracking GPS locations of multiple devices in real-time
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
+git clone https://github.com/Yaswantsoni1128/devify-x-assignment.git
 cd location-tracker-api
 ```
 
@@ -39,11 +39,15 @@ npm install
 3. Create a .env file in the root directory with the following variables:
 ```env
 PORT=3000
-MONGODB_URI=mongodb://localhost:27017/location-tracker
-JWT_SECRET=your_jwt_secret_key
+MONGODB_URI=your_mongo_uri
+JWT_SECRET=your_super_secure_secret_key_here_change_this
+ADMIN_USERNAME=admin
+ADMIN_PASSWORD=123456
 NODE_ENV=development
 RATE_LIMIT_WINDOW=15
 RATE_LIMIT_MAX=100
+MAX_LOCATION_HISTORY_DAYS=30
+GEOFENCE_CHECK_INTERVAL=30000
 ```
 
 ## Running the Application
